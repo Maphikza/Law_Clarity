@@ -95,3 +95,13 @@
     font-family: 'Montserrat', sans-serif;
     line-height: 2rem;
 }
+
+.documents-view{
+    height: 91.8%;
+}
+
+.relative-canvas{
+    position: relative;
+    max-height: 1000px;
+    overflow-y: scroll;
+}

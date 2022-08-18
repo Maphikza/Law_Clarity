@@ -1,0 +1,13 @@
+{% include "header.html" %}
+{% for regulation in reg %}
+<div class="container-fluid main-page">
+    <div class="container-fluid border border-0 w-75 main-page">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea3" class="form-label law-interface interface text-center">{{regulation.name}}</label>
+            <textarea class="form-control form-control-lg law-interface" id="exampleFormControlTextarea3"
+                rows="3">{{regulation.body}}</textarea>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% include "footer.html" %}

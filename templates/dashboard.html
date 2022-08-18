@@ -1,0 +1,310 @@
+{% include "header.html" %}
+
+
+<main class="d-flex flex-nowrap mains">
+  <h1 class="visually-hidden">Sidebars</h1>
+
+  <div class="flex-shrink-0 p-3 text-white test-board" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi pe-none me-2" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+      <span class="fs-2 fw-bold branding">Clarify</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+          Home
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <!-- {% for law in laws %}
+            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">{{law.name}}</a></li>
+            {% endfor %} -->
+            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">Updates</a>
+            </li>
+            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Financial Acts
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+
+
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              {{laws[0].name}}
+            </button>
+
+            <div class="offcanvas offcanvas-start w-75 law-canvas" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel">{{laws[0].name}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 w-25 text-end" type="search" for="FormControlTextarea"
+                    placeholder="Search for Section" aria-label="Search" id="searchBox">
+                  <button class="btn btn-outline-success" type="button" id="searchButton">Search</button>
+                </form>
+                <textarea class="form-control form-control-lg law-canvas-body" id="FormControlTextarea"
+                  rows="3">{{laws[0].body}}</textarea>
+                <script>
+                  var searchBox = document.getElementById('searchBox');
+                  var searchButton = document.getElementById('searchButton');
+                  var formControlTextarea = document.getElementById('FormControlTextarea');
+                  searchButton.addEventListener('click', function () {
+                    var searchText = searchBox.value;
+                    var textAreaText = formControlTextarea.value;
+                    var searchTextIndex = textAreaText.indexOf(searchText);
+                    if (searchTextIndex > -1) {
+                      alert('Found at index ' + searchTextIndex);
+                      formControlTextarea.scrollTop = searchTextIndex - (formControlTextarea.clientHeight / 2);
+                      formControlTextarea.setSelectionRange(searchTextIndex, searchTextIndex + searchText.length);
+                      formControlTextarea.focus();
+                    } else {
+                      alert('Not found');
+                    }
+                  });
+                </script>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          New Approach
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">New</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Processed</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Shipped</a></li> -->
+            <button class="btn btn-secondary rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">{{laws[0].name}}</button>
+            <div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">{{laws[0].name}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" aria-current="page" href="#">{{laws[0].name}}</a> -->
+                    <div class="row">
+                      <div class="col-4">
+                        <div id="list-example" class="list-group text-center text-dark">
+                          <a class="list-group-item list-group-item-action" href="#list-item-1">1. Definitions</a>
+                          <a class="list-group-item list-group-item-action" href="#list-item-2">2. Establishment </a>
+                          <a class="list-group-item list-group-item-action" href="#list-item-3">3. Objectives</a>
+                          <a class="list-group-item list-group-item-action" href="#list-item-4">4. Functions </a>
+                          <a class="list-group-item list-group-item-action" href="#list-item-5">5. General powers </a>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <h4 id="list-item-1">1. Definitions</h4>
+                          <div class="offcanvas-body text-dark paragraphs fs-6">
+                          <p>1. Definitions — (1) In this Act, unless the context indicates otherwise—  
+                            "accountable institution"  means a person referred to in Schedule 1;  
+                            “administrative sanction”  means a sanction referred to in section 45C; 
+                            [Definition inserted by s. 1 (a) of Act 11 of 2008.] 
+                            “appeal board” means the appeal board established by section 45E;  
+                            [Definition inserted by s. 1 (a) of Act 11 of 2008.] 
+                            "authorised officer"  means any official of—  
+                            (a) the South African Police Service authorised by the National Commissioner to 
+                            act under this Act;  
+                            (b)  the national prosecuting authority authorised by the National Director of Public 
+                            Prosecutions to act under this Act; 
+                            (c) an intelligence service authorised by the Director-General of that service to 
+                            act under this Act; or  
+                            (d) the South African Revenue Service authorised by the Commissioner for that 
+                             Service to act under this Act;  
+                            “bearer negotiable instrument” , for the purposes of this Act, means any 
+                            instrument that may on demand by the bearer thereof be converted to the currency 
+                            of the Republic or that of another country, and includes, amongst others, cheques, 
+                            promissory notes or money orders;  
+                            [Definition inserted by s. 1 (b) of Act 11 of 2008.] 
+                            "business relationship"  means an arrangement between a client and an 
+                            accountable institution for the purpose of concluding transactions on a regular basis;  
+                            "cash" means—  
+                            (a) coin and paper money of the Republic or of another country that is designated 
+                            as legal tender and that circulates as, and is customarily used and accepted 
+                            as, a medium of exchange in the country of issue;  
+                            (b)  travellers' cheques;  
+                            "Centre" means the Financial Intelligence Centre established by section 2;  
+                             "Council" means the Counter-Money Laundering Advisory Council established by 
+                            section 17; 
+                            [Definition inserted by s. 1 (c) of Act 11 of 2008.] 
+                            "Director" means the Director of the Centre appointed in terms of section 6;  
+                            “entity” has a corresponding meaning with the definition in section 1 of the                      
+                              
+                            
+                            Protection of Constitutional Democracy Against Terrorist and Related Activities Act, 
+                            2004;  
+                            [Definition inserted by s. 27 (1) of Act 11 of 2008.] 
+                            “inspector” means a person appointed in terms of section 45A 
+                            [Definition inserted by s. 1 (c) of Act 11 of 2008.] 
+                            "intelligence service"  means the National Intelligence Agency or the South  
+                            African Secret Service established by section 3 of the Intelligence Services Act,  
+                            1994 (Act No. 38 of 1994);  
+                            "investigating authority"  means an authority that in terms of national legislation 
+                            may investigate unlawful activities;  
+                            "Minister" means the Minister of Finance;  
+                            "money laundering" or "money laundering activity"  means an activity which has 
+                            or is likely to have the effect of concealing or disguising the nature, source, location, 
+                            disposition or movement of the proceeds of unlawful activities or any interest which 
+                            anyone has in such proceeds, and includes any activity which constitutes an offence 
+                            in terms of section 64 of this Act or section 4, 5 or 6 of the Prevention Act; 
+                            "National Commissioner"  means the National Commissioner of the South African  
+                            Police Service referred to in section 207 of the Constitution of the Republic of South 
+                            Africa, 1996 (Act No. 108 of 1996);  
+                            "National Director of Public Prosecutions"  means the National Director of Public  
+                            Prosecutions referred to in section 179 of the Constitution of the Republic of South 
+                            Africa, 1996 (Act No. 108 of 1996);  “non-compliance”  means any act or omission, and 'fails to comply', 'failure to comply' and 'not complying' have the same meaning;  
+                            [Definition inserted by s. 1 (e) of Act 11 of 2008.] 
+                            “offence relating to the financing of terrorist and related activities”  means an 
+                            offence under section 4 of the Protection of Constitutional Democracy against 
+                            Terrorist and Related Activities Act, 2004;  
+                            "prescribed" means prescribed by the Minister by regulation in terms of section 77;  
+                            "Prevention Act" means the Prevention of Organised Crime Act, 1998 (Act No. 121 
+                            of 1998);  
+                            "proceeds of unlawful activities"  has the meaning attributed to that term in 
+                            section 1 of the Prevention Act; 
+                             
+                            
+                            "property" has the meaning attributed to that term in section 1 of the Prevention 
+                            Act; 
+                            "reporting institution"  means a person referred to in Schedule 3;  
+                            "single transaction"  means a transaction other than a transaction concluded in the 
+                            course of a business relationship; 
+                            "South African Revenue Service"  means the South African Revenue Service 
+                            established by section 2 of the South African Revenue Service Act, 1997 (Act No. 34 
+                            of 1997);  
+                            "supervisory body"  means a functionary or institution referred to in Schedule 2;  
+                            “terrorist and related activities”  has the meaning assigned to it in section 1 of the 
+                            Protection of Constitutional Democracy Against Terrorist and Related Activities Act. 
+                            2004 (Act No. 33 of 2004);  
+                            [Definition inserted by s. 1 (f) of Act 11 of 2008.] 
+                            "this Act" includes a regulation made or exemption given under this Act;  
+                            [Definition inserted by s. 1 (g) of Act 11 of 2008.] 
+                            "transaction" means a transaction concluded between a client and an accountable 
+                            institution in accordance with the type of business carried on by that institution;  
+                            "unlawful activity"  has the meaning attributed to that term in section 1 of the 
+                            Prevention Act. 
+                            (2) For the purposes of this Act a person has knowledge of a fact if — 
+                            (a) the person has actual knowledge of that fact; or  
+                            (b) the court is satisfied that—  
+                            (i) he person believes that there is a reasonable possibility of the 
+                            existence of that fact; and  
+                            (ii) the person fails to obtain information to confirm or refute the 
+                            existence of that fact.  
+                            (3) For the purposes of this Act a person ought reasonably to have known or 
+                            suspected a fact if the conclusions that he or she ought to have reached, are 
+                            those which would have been reached by a reasonably diligent and vigilant 
+                            person having both—  
+                            (a) the general knowledge, skill, training and experience that may 
+                            reasonably be expected of a person in his or her position; and  
+                            (b) the general knowledge, skill, training and experience that he or she in 
+                            fact has.  
+                            
+                            1A. Application of Act when in conflict with other laws 
+                            If any conflict, relating to the matters dealt with in this Act, arises between this Act 
+                            and the provisions of any other law existing at the commencement of this Act, save 
+                            the Constitution, the provisions of this Act prevail.  </p></div>
+                          <h4 id="list-item-2">2. Establishment</h4>
+                          <div class="offcanvas-body text-dark paragraphs fs-6">
+                          <p>2. Establishment  
+                            (1) A Financial Intelligence Centre is hereby established as an institution outside 
+                            the public service but within the public administration as envisaged in section 
+                            195 of the Constitution.  
+                            (2) The Centre is a juristic person.  
+                             
+                            3. Objectives  
+                            (1) The principal objective of the Centre is to assist in the identification of the 
+                            proceeds of unlawful activities and the combating of money laundering 
+                            activities and the financing of terrorist and related activities.  
+                            (2) The other objectives of the Centre are—  
+                              (a) to make information collected by it available to investigating authorities, 
+                            supervisory bodies, the intelligence services and the South African 
+                            Revenue Services to facilitate the administration and enforcement of 
+                            the laws of the Republic;  
+                            [Substituted by s. 3 (a) of Act 11 of 2008.]  
+                              (b) to exchange information with bodies with similar objectives in other 
+                            countries regarding money laundering activities, the financing of 
+                            terrorist and related activities, and other similar  activities;  
+                            [Substituted by s. 3 (b) of Act 11 of 2008.] 
+                            (c) to supervise and enforce compliance with this Act or any directive 
+                            made in terms of this Act and to facilitate effective supervision and 
+                            enforcement by supervisory bodies.   
+                            [Substituted by s. 3 (c) of Act 11 of 2008.] 
+                            </p></div>
+                          <h4 id="list-item-3">Item 3</h4>
+                          <p>...</p>
+                          <h4 id="list-item-4">Item 4</h4>
+                          <p>...</p>
+                          <h4 id="list-item-5">Item 5</h4>
+                          <p>...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">New...</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Profile</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Settings</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div class="b-example-divider b-example-vr"></div> -->
+
+  <div class="container-fluid main-page">
+    <form method="post">
+      <div class="container-fluid border border-0 w-75 main-page">
+        <div class="form-group mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label interface text-center">Input Text:</label>
+          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea2" rows="3"
+            name="prompt"></textarea>
+          <input class="btn btn-secondary" type="submit" value="Submit Button"></input>
+        </div>
+      </div>
+    </form>
+    <div class="container-fluid border border-0 w-75 main-page">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label interface text-center">Model Output:</label>
+        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1"
+          rows="3">{{prompt}}{{output}}</textarea>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include "footer.html" %}

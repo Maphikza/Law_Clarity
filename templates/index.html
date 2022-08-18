@@ -1,0 +1,123 @@
+{% include "header.html" %}
+
+<main class="d-flex flex-nowrap mains">
+  <h1 class="visually-hidden">Sidebars</h1>
+
+  <div class="flex-shrink-0 p-3 text-white test-board" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi pe-none me-2" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+      <span class="fs-2 fw-bold branding">Clarify</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+          Home
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <!-- {% for law in laws %}
+            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">{{law.name}}</a></li>
+            {% endfor %} -->
+            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">Updates</a>
+            </li>
+            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Financial Acts
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+
+            {% for law in laws %}
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample{{law.id}}" aria-controls="offcanvasExample{{law.id}}">
+              {{law.name}}
+            </button>
+
+            <div class="offcanvas offcanvas-start w-75 law-canvas" tabindex="-1" id="offcanvasExample{{law.id}}"
+              aria-labelledby="offcanvasExampleLabel{{law.id}}">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel{{law.id}}">{{law.name}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2 w-25 text-end" type="search" for="FormControlTextarea{{law.id}}"
+                    placeholder="Search for Section" aria-label="Search" id="searchBox{{law.id}}">
+                  <button class="btn btn-outline-success" type="button" id="searchButton">Search</button>
+                </form> -->
+                <textarea class="form-control form-control-lg law-canvas-body" id="FormControlTextarea{{law.id}}"
+                rows="3">{{law.body}}</textarea>
+              </div>
+            </div>
+            {% endfor %}
+
+            
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Orders
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">New</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Processed</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Shipped</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+          data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">New...</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Profile</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-white">Settings</a></li>
+            <li><a href="{{url_for('logout')}}" class="link-dark d-inline-flex text-decoration-none rounded text-white">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div class="b-example-divider b-example-vr"></div> -->
+
+  <div class="container-fluid main-page">
+    <form method="post">
+      <div class="container-fluid border border-0 w-75 main-page">
+        <div class="form-group mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label interface text-center">Input Text:</label>
+          <textarea class="form-control form-control-lg rounded-0" id="exampleFormControlTextarea2" rows="3"
+            name="prompt"></textarea>
+          <input class="btn btn-secondary" type="submit" value="Submit Button"></input>
+        </div>
+      </div>
+    </form>
+    <div class="container-fluid border border-0 w-75 main-page">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label interface text-center">Model Output:</label>
+        <textarea class="form-control form-control-lg rounded-0" id="exampleFormControlTextarea1"
+          rows="3">{{prompt}}{{output}}</textarea>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include "footer.html" %}

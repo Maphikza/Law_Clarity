@@ -1,0 +1,97 @@
+/* .intro{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+} */
+
+.love{
+    color: #ea3a7b;
+    padding-left: 4px;
+}
+
+.page-header{
+    background-color: #9EABB3;
+    color: white;
+}
+
+.branding{
+    font-family: 'PT Serif', serif;
+    color: #F6E8DA;
+}
+
+.main-page{
+    background-color: #B7C1C3;
+    padding: 1rem;
+}
+
+.footer{
+    text-align: center;
+    background-color: #474745;
+}
+
+#exampleFormControlTextarea2{
+    height: 15rem;
+}
+
+
+#exampleFormControlTextarea1{
+    height: 26rem;
+}
+
+#exampleFormControlTextarea3{
+    height: 35rem;
+}
+
+.interface{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.law-interface{
+    line-height: 4rem;
+    font-family: 'PT Serif', serif;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.test-board{
+    background-color: #889293;
+    font-family: 'PT Serif', serif;
+    color: #E3E8EB;
+}
+
+.law-canvas{
+    font-family: 'PT Serif', serif;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.law-canvas-body{
+    height: 50rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+}
+
+.login-page{
+    padding: 20.1rem;
+    background-color: #B7C1C3;
+}
+
+.registration-page{
+    background-color: #B7C1C3;
+    padding: 8rem;
+}
+
+.registration-form{
+    color: #474745;
+}
+
+.register-link{
+    text-align: center;
+}
+
+.paragraphs{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+}

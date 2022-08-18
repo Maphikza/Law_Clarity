@@ -1,0 +1,27 @@
+{% include "header.html" %}
+
+<div class="container-fluid login-page">
+<main class="form-signin w-25 m-auto">
+  <form class="login-form" method="post">
+    <h1 class="h3 mb-3 fw-normal text-center text-white">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control mb-1" id="floatingPassword" placeholder="Password" name="password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <!-- <div class="checkbox mb-2 mt-1 visually-hidden">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div> -->
+    <input class="w-100 btn btn-lg btn-secondary" type="submit" value="Sign In">
+    <a class="register-link" href="{{url_for('register')}}">Register</a>
+  </form>
+</main>
+</div>
+
+{% include "footer.html" %}

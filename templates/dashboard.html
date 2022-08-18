@@ -19,9 +19,6 @@
         </button>
         <div class="collapse" id="home-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <!-- {% for law in laws %}
-            <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">{{law.name}}</a></li>
-            {% endfor %} -->
             <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">Updates</a>
             </li>
             <li><a href="#" class="link-secondary d-inline-flex text-decoration-none rounded text-white">Reports</a>
@@ -29,57 +26,16 @@
           </ul>
         </div>
       </li>
-      <li class="mb-1">
+      <!-- <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
           data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
           Financial Acts
         </button>
         <div class="collapse" id="dashboard-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-
-
-            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-              {{laws[0].name}}
-            </button>
-
-            <div class="offcanvas offcanvas-start w-75 law-canvas" tabindex="-1" id="offcanvasExample"
-              aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel">{{laws[0].name}}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2 w-25 text-end" type="search" for="FormControlTextarea"
-                    placeholder="Search for Section" aria-label="Search" id="searchBox">
-                  <button class="btn btn-outline-success" type="button" id="searchButton">Search</button>
-                </form>
-                <textarea class="form-control form-control-lg law-canvas-body" id="FormControlTextarea"
-                  rows="3">{{laws[0].body}}</textarea>
-                <script>
-                  var searchBox = document.getElementById('searchBox');
-                  var searchButton = document.getElementById('searchButton');
-                  var formControlTextarea = document.getElementById('FormControlTextarea');
-                  searchButton.addEventListener('click', function () {
-                    var searchText = searchBox.value;
-                    var textAreaText = formControlTextarea.value;
-                    var searchTextIndex = textAreaText.indexOf(searchText);
-                    if (searchTextIndex > -1) {
-                      alert('Found at index ' + searchTextIndex);
-                      formControlTextarea.scrollTop = searchTextIndex - (formControlTextarea.clientHeight / 2);
-                      formControlTextarea.setSelectionRange(searchTextIndex, searchTextIndex + searchText.length);
-                      formControlTextarea.focus();
-                    } else {
-                      alert('Not found');
-                    }
-                  });
-                </script>
-              </div>
-            </div>
           </ul>
         </div>
-      </li>
+      </li> -->
       <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
           data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
@@ -923,7 +879,7 @@
               <div class="offcanvas offcanvas-start w-75 documents-view" tabindex="-1" id="offcanvasExample4"
                 aria-labelledby="offcanvasExampleLabel1">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel1">{{laws[4].name}}</h5>
+                  <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel4">{{laws[4].name}}</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
 

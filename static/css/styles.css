@@ -105,3 +105,8 @@
     max-height: 1000px;
     overflow-y: scroll;
 }
+
+.chapter-title{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}

@@ -1,9 +1,49 @@
 {% include "header.html" %}
+<div class="container-fluid header-container">
+  <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start navbar-head">
+          {% if current_user.is_authenticated: %}
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-4 text-white">Home</a></li>
+              <div class="dropdown px-2">
+                  <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Legislation
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                              aria-controls="offcanvasExample">{{laws[4].name}}</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+              </div>
+          </ul>
+          {% endif %}
+          <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                  aria-label="Search">
+          </form> -->
+
+          <div class="text-end">
+              {% if current_user.is_authenticated: %}
+              <a href="{{url_for('logout')}}" type="button" class="btn btn-outline-light">Logout</a>
+              {% endif %}
+              {% if not current_user.is_authenticated: %}
+              <a href="{{url_for('register')}}" type="button" class="btn btn-dark">Sign-up</a>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+</div>
 
 <div class="container-fluid login-page">
 <main class="form-signin w-25 m-auto">
   <form class="login-form" method="post">
-    <h1 class="h3 mb-3 fw-normal text-center text-white">Please sign in</h1>
+    <h1 class="h3 mb-3 fw-normal text-center text-dark">Please sign in</h1>
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
@@ -19,7 +59,7 @@
       </label>
     </div> -->
     <input class="w-100 btn btn-lg btn-secondary" type="submit" value="Sign In">
-    <a class="register-link" href="{{url_for('register')}}">Register</a>
+    <!-- <a class="register-link" href="{{url_for('register')}}">Register</a> -->
   </form>
 </main>
 </div>

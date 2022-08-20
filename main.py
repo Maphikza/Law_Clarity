@@ -138,8 +138,8 @@ def get_data():
 @app.route("/law", methods=["GET", "POST"])
 @login_required
 def dashboard():
-    reg = Legislation.query.all()
-    return render_template("display.html", reg=reg)
+    laws = Legislation.query.all()
+    return render_template("display.html", laws=laws)
 
 
 @app.route("/dashboard", methods=["GET", "POST"])

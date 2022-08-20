@@ -1,7 +1,19 @@
-/* .intro{
-    padding-top: 2rem;
+.intro{
+    padding-top: 8rem;
     padding-bottom: 2rem;
-} */
+    color: white;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.navbar-head{
+    background-color: #474745;
+}
+
+.header-container{
+    background-color: #474745;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .love{
     color: #ea3a7b;
@@ -19,6 +31,7 @@
 }
 
 .main-page{
+    height: 52rem;
     background-color: #B7C1C3;
     padding: 1rem;
 }
@@ -74,7 +87,7 @@
 }
 
 .login-page{
-    padding: 20.1rem;
+    padding: 20.4rem;
     background-color: #B7C1C3;
 }
 
@@ -109,4 +122,10 @@
 .chapter-title{
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+}
+
+.summaries{
+    color: #107980;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
 }

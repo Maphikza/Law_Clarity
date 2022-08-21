@@ -5,14 +5,39 @@
     font-family: 'Montserrat', sans-serif;;
 }
 
+.intro-header{
+    font-weight: bold;
+}
+
+.intro-body{
+    font-weight: 500;
+    line-height: 2rem;
+}
+
 .navbar-head{
-    background-color: #474745;
+    background-color: #16354D;
 }
 
 .header-container{
-    background-color: #474745;
+    background-color: #16354D;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.logo-text{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+.about-button{
+    font-family: 'PT Serif', serif;
+}
+
+.about-us{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    background-color: #E4E5EA;
 }
 
 .love{
@@ -32,13 +57,13 @@
 
 .main-page{
     height: 52rem;
-    background-color: #B7C1C3;
+    background-color: #0C151C;
     padding: 1rem;
 }
 
 .footer{
     text-align: center;
-    background-color: #474745;
+    background-color: #16354D;
 }
 
 #exampleFormControlTextarea2{
@@ -88,16 +113,16 @@
 
 .login-page{
     padding: 20.4rem;
-    background-color: #B7C1C3;
+    background-color: #0C151C;
 }
 
 .registration-page{
-    background-color: #B7C1C3;
-    padding: 8rem;
+    background-color: #0C151C;
+    padding: 4rem;
 }
 
 .registration-form{
-    color: #474745;
+    color: #E4E5EA;
 }
 
 .register-link{
@@ -111,6 +136,7 @@
 
 .documents-view{
     height: 91.8%;
+    background-color: #E4E5EA;
 }
 
 .relative-canvas{
@@ -122,10 +148,18 @@
 .chapter-title{
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    /* background-color: #D2D2D4; */
+}
+
+.section-titles{
+    background-color: #D2D2D4;
+    /* color: white; */
 }
 
 .summaries{
-    color: #107980;
+    /* color: #107980; */
+    color: #16354D;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
+    font-weight: 600;
 }

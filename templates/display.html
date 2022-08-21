@@ -3,22 +3,20 @@
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start navbar-head">
             {% if current_user.is_authenticated: %}
+            <a class="navbar-brand text-white fs-1 logo-text pt-0" href="#">TLL</a>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-4 text-white">Home</a></li>
-                <div class="dropdown px-2">
+                <!-- <li><a href="#" class="nav-link px-4 text-white">Home</a></li> -->
+                <div class="dropdown px-4">
                     <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Legislation
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item active" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <ul class="dropdown-menu dropdown-menu-outline-dark">
                         <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                aria-controls="offcanvasExample">{{laws[4].name}}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                aria-controls="offcanvasExample">{{laws[0].name}}</a></li>
+                        <li><a class="dropdown-item" href="#">{{laws[1].name}}</a></li>
+                        <li><a class="dropdown-item" href="#">{{laws[2].name}}</a></li>
+                        <li><a class="dropdown-item" href="#">{{laws[3].name}}</a></li>
                     </ul>
                 </div>
             </ul>
@@ -42,14 +40,31 @@
 
 <div class="container-fluid main-page">
 
-    <div class="container w-50 intro">
+    <div class="container w-75 intro">
         <main class="px-3">
-            <h1>Our Goal is to simplify.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit
-                the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-            </p>
+            <h1 class="intro-header">Welcome to The Legislative Library</h1>
+            <p class="lead intro-body">A website created for compliance and law professionals.
+                On this site, you'll find actual legislation as well as simplified summaries in plain language for each
+                section.
+                We hope you find this site helpful and easy to use!</p>
+            <div class="dropdown pb-4">
+                <button type="button" class="btn btn-lg btn-outline-light dropdown-toggle fw-bold about-button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    Learn More:
+                </button>
+                <div class="dropdown-menu p-4 about-us" style="max-width: 1400px;">
+                    <p class="about-us">We created this website to make it easier for compliance and law professionals
+                        to read and understand legislation. We believe that by providing a simplified summary of each
+                        section, professionals will be able to more easily and quickly digest the information and
+                        communicate it to others. We hope that this website will help make the law more accessible to
+                        everyone. On this website, you can click on the legislation button, find the
+                        legislation you are looking for, and it will be laid out in a simple and easy-to-understand
+                        format.</p>
+                </div>
+            </div>
+            <!-- <p class="lead">
+                <a href="#" class="btn btn-secondary fw-bold">Learn more</a>
+            </p> -->
         </main>
     </div>
 </div>
@@ -69,207 +84,302 @@
                 <div class="row">
                     <div class="col-4">
                         <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#list-item-1">1. Definitions</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-1">1.
+                                Definitions</a>
                             <h6 class="chapter-title">FINANCIAL INTELLIGENCE CENTRE (section 2-16)</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-2">2. Establishment</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-3">3. Objectives</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-4">4. Functions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-5">5. General powers</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-6">6. Appointment of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-2">2.
+                                Establishment</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-3">3.
+                                Objectives</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-4">4.
+                                Functions</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-5">5.
+                                General powers</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-6">6.
+                                Appointment of
                                 Director</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-7">7. Removal from
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-7">7.
+                                Removal from
                                 office</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-8">8. Acting Director</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-9">9. Proof of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-8">8.
+                                Acting Director</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-9">9.
+                                Proof of
                                 appointment</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-10">10. Responsibilities
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-10">10.
+                                Responsibilities
                                 of
                                 Director </a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-11">11. Staff</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-12">12. Security
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-11">11.
+                                Staff</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-12">12.
+                                Security
                                 screening
                                 of staff of Centre other than Director </a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-13">13. Security
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-13">13.
+                                Security
                                 screening
                                 of Director of Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-14">14. Funds and
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-14">14.
+                                Funds and
                                 financial
                                 year of Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-15">15. Audit </a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-16">16. Delegation </a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-15">15.
+                                Audit </a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-16">16.
+                                Delegation </a>
                             <h6 class="chapter-title">COUNTER-MONEY LAUNDERING ADVISORY COUNCIL (section 17-20)</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-17">17. Establishment</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-18">18. Functions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-19">19. Composition</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-20">20. Meetings and
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-17">17.
+                                Establishment</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-18">18.
+                                Functions</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-19">19.
+                                Composition</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-20">20.
+                                Meetings and
                                 procedure</a>
                             <h6 class="chapter-title">CONTROL MEASURES FOR MONEY LAUNDERING AND FINANCING OF
                                 TERRORIST AND RELATED ACTIVITIES (section 21-45) </h6>
                             <h6>Duty to identify clients</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-21">21. Identification of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-21">21.
+                                Identification of
                                 clients and other persons</a>
                             <h6 class="chapter-title">Duty to keep record </h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-22">22. Record to be kept
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-22">22.
+                                Record to be kept
                                 of business relationships and transactions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-23">23. Period for which
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-23">23.
+                                Period for which
                                 records must be kept</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-24">24. Records may be
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-24">24.
+                                Records may be
                                 kept
                                 by third parties</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-25">25. Admissibility of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-25">25.
+                                Admissibility of
                                 records</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-26">26. Centre's access
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-26">26.
+                                Centre's access
                                 to
                                 records</a>
                             <h6 class="chapter-title">Reporting duties and access to information</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-27">27. Accountable
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-27">27.
+                                Accountable
                                 institutions to advise Centre of clients</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-28">28. Cash transactions
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-28">28.
+                                Cash transactions
                                 above prescribed limit</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-28A">28A. Property
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-28A">28A.
+                                Property
                                 associated with terrorist and related activities</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-29">29. Suspicious and
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-29">29.
+                                Suspicious and
                                 unusual transactions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-30">30. Conveyance of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-30">30.
+                                Conveyance of
                                 cash
                                 to or from Republic</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-31">31. Electronic
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-31">31.
+                                Electronic
                                 transfers of money to or from Republic</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-32">32. Reporting
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-32">32.
+                                Reporting
                                 procedures and furnishing of additional information</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-33">33. Continuation of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-33">33.
+                                Continuation of
                                 transactions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-34">34. Intervention by
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-34">34.
+                                Intervention by
                                 Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-35">35. Monitoring
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-35">35.
+                                Monitoring
                                 orders</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-36">36. Information held
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-36">36.
+                                Information held
                                 by
                                 supervisory bodies and South African Revenue Service</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-37">37. Reporting duty
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-37">37.
+                                Reporting duty
                                 and
                                 obligations to provide information not affected by confidentiality rules</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-38">38. Protection of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-38">38.
+                                Protection of
                                 persons making reports</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-39">39. Admissibility as
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-39">39.
+                                Admissibility as
                                 evidence of reports made to Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-40">40. Access to
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-40">40.
+                                Access to
                                 information held by Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-41">41. Protection of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-41">41.
+                                Protection of
                                 confidential information</a>
                             <h6 class="chapter-title">Measures to promote compliance by accountable institutions</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-42">42. Formulation and
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-42">42.
+                                Formulation and
                                 implementation of internal rules</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-43">43. Training and
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-43">43.
+                                Training and
                                 monitoring of compliance</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-43A">43A. Directives</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-43B">43B. Registration by
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-43A">43A.
+                                Directives</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-43B">43B.
+                                Registration by
                                 accountable institution and reporting institution</a>
                             <h6 class="chapter-title">Referral and supervision</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-44">44. Referral of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-44">44.
+                                Referral of
                                 suspected offences to investigating authorities and other public bodies</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-45">45. Responsibility
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-45">45.
+                                Responsibility
                                 for
                                 supervision of accountable institutions</a>
                             <h6 class="chapter-title">COMPLIANCE AND ENFORCEMENT
                                 [Heading substituted by s. 16 (a) of Act 11 of 2008.]</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-45A">45A. Appointment of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-45A">45A.
+                                Appointment of
                                 inspectors</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-45B">45B. Inspections</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-45C">45C. Administrative
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-45B">45B.
+                                Inspections</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-45C">45C.
+                                Administrative
                                 sanctions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-45D">45D. Appeal</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-45E">45E. Establishment
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-45D">45D.
+                                Appeal</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-45E">45E.
+                                Establishment
                                 of
                                 appeal board</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-52">52. Failure to report
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-52">52.
+                                Failure to report
                                 suspicious or unusual transactions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-53">53. Unauthorised
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-53">53.
+                                Unauthorised
                                 disclosure</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-54">54. Failure to report
+                            <a class="list-group-item list-group-item-action  section-titles" href="#list-item-54">54.
+                                Failure to report
                                 conveyance of cash or bearer negotiable instrument into or out of Republic</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-55">55. Failure to send
+                            <a class="list-group-item list-group-item-action  section-titles" href="#list-item-55">55.
+                                Failure to send
                                 report to Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-56">56. Failure to report
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-56">56.
+                                Failure to report
                                 electronic transfers</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-57">57. Failure to comply
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-57">57.
+                                Failure to comply
                                 with request</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-58">58. Failure to comply
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-58">58.
+                                Failure to comply
                                 with directives</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-59">59. Failure to comply
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-59">59.
+                                Failure to comply
                                 with monitoring order</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-60">60. Misuse of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-60">60.
+                                Misuse of
                                 information</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-61">61. Failure to
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-61">61.
+                                Failure to
                                 formulate and implement internal rules</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-61A">61A. Failure to
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-61A">61A.
+                                Failure to
                                 register with Centre</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-62">62. Failure to
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-62">62.
+                                Failure to
                                 provide
                                 training or appoint compliance officer</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-62A">62A. Offences
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-62A">62A.
+                                Offences
                                 relating
                                 to inspection</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-62B">62B. Hindering or
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-62B">62B.
+                                Hindering or
                                 obstructing appeal board</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-62C">62C. Failure to
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-62C">62C.
+                                Failure to
                                 attend
                                 when summoned</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-62D">62D. Failure to
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-62D">62D.
+                                Failure to
                                 answer
                                 fully or truthfully</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-63">63. Obstructing of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-63">63.
+                                Obstructing of
                                 official in performance of functions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-64">64. Conducting
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-64">64.
+                                Conducting
                                 transactions to avoid reporting duties</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-65">65. Unauthorised
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-65">65.
+                                Unauthorised
                                 access
                                 to computer system or application or data</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-66">66. Unauthorised
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-66">66.
+                                Unauthorised
                                 modification of contents of computer system</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-67">67. Definitions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-68">68. Penalties</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-69">69. Defences</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-70">70. Search, seizure
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-67">67.
+                                Definitions</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-68">68.
+                                Penalties</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-69">69.
+                                Defences</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-70">70.
+                                Search, seizure
                                 and
                                 forfeiture</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-71">71. Jurisdiction of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-71">71.
+                                Jurisdiction of
                                 courts</a>
                             <h6 class="chapter-title">MISCELLANEOUS (section 72-82)</h6>
-                            <a class="list-group-item list-group-item-action" href="#list-item-72">72. Act not to limit
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-72">72.
+                                Act not to limit
                                 powers of investigating authorities or supervisory bodies</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-73">73.Amendment of list
+                            <a class="list-group-item list-group-item-action section-titles"
+                                href="#list-item-73">73.Amendment of list
                                 of
                                 accountable institutions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-74">74. Exemptions for
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-74">74.
+                                Exemptions for
                                 accountable institutions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-75">75. Amendment of list
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-75">75.
+                                Amendment of list
                                 of supervisory bodies </a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-76">76. Amendment of list
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-76">76.
+                                Amendment of list
                                 of reporting institutions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-77">77. Regulations</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-78">78. Indemnity</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-79">79. Amendment of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-77">77.
+                                Regulations</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-78">78.
+                                Indemnity</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-79">79.
+                                Amendment of
                                 laws</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-80">80. Status of
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-80">80.
+                                Status of
                                 footnotes</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-81">81. Transitional
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-81">81.
+                                Transitional
                                 arrangements</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-82">82. Short title and
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-82">82.
+                                Short title and
                                 commencement</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-83">Schedule 1 List of
+                            <a class="list-group-item list-group-item-action section-titles"
+                                href="#list-item-83">Schedule 1 List of
                                 accountable institutions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-84">Schedule 2 List of
+                            <a class="list-group-item list-group-item-action section-titles"
+                                href="#list-item-84">Schedule 2 List of
                                 supervisory bodies</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-85">Schedule 3 List of
+                            <a class="list-group-item list-group-item-action section-titles"
+                                href="#list-item-85">Schedule 3 List of
                                 reporting institutions</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-86">Schedule 4 Amendment
+                            <a class="list-group-item list-group-item-action section-titles"
+                                href="#list-item-86">Schedule 4 Amendment
                                 of
                                 sections of Prevention of Organised Crime Act, 1998 (Act 121 of 1998)</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-87">Amendment of
+                            <a class="list-group-item list-group-item-action section-titles"
+                                href="#list-item-87">Amendment of
                                 Promotion
                                 of Access to Information Act, 2000 (Act 2 of 2000)</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-8">8. Acting Director</a>
+                            <a class="list-group-item list-group-item-action section-titles" href="#list-item-8">8.
+                                Acting Director</a>
                         </div>
                     </div>
                     <div class="col-8">
@@ -394,11 +504,17 @@
                                 the public service but within the public administration as envisaged in section
                                 195 of the Constitution.
                                 (2) The Centre is a juristic person.</p>
-                            <p class="summaries">Plain Language summary: <br>The Centre is a financial intelligence
-                                institution
-                                that is outside of the public service, but is still part of the government. It is its
-                                own
-                                legal entity.</p>
+                            <div class="dropdown pb-4">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Plain Language Summary
+                                </button>
+                                <div class="dropdown-menu p-4 text-muted" style="max-width: 1400px;">
+                                    <p class="summaries">The Centre is a financial intelligence institution
+                                        that is outside of the public service, but is still part of the government. It
+                                        is its own legal entity.</p>
+                                </div>
+                            </div>
 
                             <h4 id="list-item-3">3. Objectives</h4>
                             <p class="paragraphs"> 3. Objectives
@@ -419,11 +535,21 @@
                                 made in terms of this Act and to facilitate effective supervision and
                                 enforcement by supervisory bodies.
                                 [Substituted by s. 3 (c) of Act 11 of 2008.]</p>
-                            <p class="summaries">Plain Language summary: <br>The Centre's objective is to help identify
-                                the money from illegal activities and stop money laundering and funding for terrorist
-                                activities. The Centre also shares information with similar organizations in other
-                                countries
-                                and makes sure people obey the law.</p>
+                            <div class="dropdown pb-4">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Plain Language Summary
+                                </button>
+                                <div class="dropdown-menu p-4 text-muted" style="max-width: 1400px;">
+                                    <p class="summaries">The Centre's objective is to help identify
+                                        the money from illegal activities and stop money laundering and funding for
+                                        terrorist
+                                        activities. The Centre also shares information with similar organizations in
+                                        other
+                                        countries
+                                        and makes sure people obey the law.</p>
+                                </div>
+                            </div>
 
                             <h4 id="list-item-4">4. Functions</h4>
                             <p class="paragraphs">To achieve its objectives the Centre must
@@ -454,18 +580,31 @@
                                 despite any recommendation of the Centre made in terms of section
                                 44(b).
                                 [Added by s. 4 (b) of Act 11 of 2008.]</p>
-                            <p class="summaries">Plain Language summary: <br>The Financial Intelligence Centre (FIC) is
-                                responsible for processing, analyzing, and interpreting information related to financial
-                                crimes. The FIC also works with investigating authorities, supervisory bodies, and
-                                intelligence services to help prevent financial crimes. Additionally, the FIC is
-                                responsible
-                                for monitoring and giving guidance to accountable institutions and reporting
-                                institutions
-                                (such as banks) to make sure they are complying with the law. The FIC also keeps records
-                                of
-                                information related to financial crimes and submits an annual report to the Minister.
-                                Finally, the FIC is responsible for enforcing compliance with the law by accountable and
-                                reporting institutions that are not regulated or supervised by another body.</p>
+                            <div class="dropdown pb-4">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Plain Language Summary
+                                </button>
+                                <div class="dropdown-menu p-4 text-muted" style="max-width: 1400px;">
+                                    <p class="summaries">The Financial Intelligence Centre (FIC) is
+                                        responsible for processing, analyzing, and interpreting information related to
+                                        financial
+                                        crimes. The FIC also works with investigating authorities, supervisory bodies,
+                                        and
+                                        intelligence services to help prevent financial crimes. Additionally, the FIC is
+                                        responsible
+                                        for monitoring and giving guidance to accountable institutions and reporting
+                                        institutions
+                                        (such as banks) to make sure they are complying with the law. The FIC also keeps
+                                        records
+                                        of
+                                        information related to financial crimes and submits an annual report to the
+                                        Minister.
+                                        Finally, the FIC is responsible for enforcing compliance with the law by
+                                        accountable and
+                                        reporting institutions that are not regulated or supervised by another body.</p>
+                                </div>
+                            </div>
 
                             <h4 id="list-item-5">5. General powers</h4>
                             <p class="paragraphs">(1) The Centre may do all that is necessary or expedient to perform
@@ -492,13 +631,25 @@
                                 organisation in the Republic or elsewhere, aimed at promoting its
                                 objectives;
                                 (i) do anything that is incidental to the exercise of any of its powers.</p>
-                            <p class="summaries"> Plain Language summary: <br>The Centre may do anything necessary to
-                                perform its functions effectively, which includes the power to determine its own staff
-                                establishment and terms and conditions of employment, appoint employees, obtain services
-                                from
-                                any person or state department, acquire or dispose of any property, open and operate its
-                                own
-                                bank accounts, insure itself, perform legal acts, and engage in any lawful activity.</p>
+                            <div class="dropdown pb-4">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Plain Language Summary
+                                </button>
+                                <div class="dropdown-menu p-4 text-muted" style="max-width: 1400px;">
+                                    <p class="summaries">The Centre may do anything necessary to
+                                        perform its functions effectively, which includes the power to determine its own
+                                        staff
+                                        establishment and terms and conditions of employment, appoint employees, obtain
+                                        services
+                                        from
+                                        any person or state department, acquire or dispose of any property, open and
+                                        operate its
+                                        own
+                                        bank accounts, insure itself, perform legal acts, and engage in any lawful
+                                        activity.</p>
+                                </div>
+                            </div>
 
                             <h4 id="list-item-6">6. Appointment of Director</h4>
                             <p class="paragraphs">(1) The Minister must appoint a fit and proper person as the Director
@@ -513,13 +664,25 @@
                                 (3) The Minister must consult the Council before appointing a person or renewing
                                 the appointment of a person as the Director, except in the case of the
                                 appointment of the first Director.</p>
-                            <p class="summaries"> Plain Language summary: <br>The Minister is responsible for appointing
-                                the Director of the Centre, who must be a fit and proper person. The Director's term of
-                                office is five years, renewable, and they are employed on terms and conditions set out
-                                in a
-                                written contract, which must include specific, measurable performance standards. The
-                                Minister must consult the Council before appointing or renewing the appointment of the
-                                Director, except in the case of the first Director.</p>
+                            <div class="dropdown pb-4">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Plain Language Summary
+                                </button>
+                                <div class="dropdown-menu p-4 text-muted" style="max-width: 1400px;">
+                                    <p class="summaries">The Minister is responsible for appointing
+                                        the Director of the Centre, who must be a fit and proper person. The Director's
+                                        term of
+                                        office is five years, renewable, and they are employed on terms and conditions
+                                        set out
+                                        in a
+                                        written contract, which must include specific, measurable performance standards.
+                                        The
+                                        Minister must consult the Council before appointing or renewing the appointment
+                                        of the
+                                        Director, except in the case of the first Director.</p>
+                                </div>
+                            </div>
 
                             <h4 id="list-item-7">7. Removal from office</h4>
                             <p class="paragraphs">(1) The Minister may remove the Director from office only on the
@@ -871,19 +1034,34 @@
                                 (5) An accountable institution must without delay give an authorised
                                 representative of the Centre all reasonable assistance necessary to enable
                                 that representative to exercise the powers mentioned in subsection (1).</p>
-                            <p class="summaries"> Plain Language summary: <br>The Centre is allowed to access and copy
-                                any
-                                records kept by an accountable institution if the Centre believes that the records may
-                                help
-                                identify the proceeds of unlawful activities or help combat money laundering activities.
-                                The
-                                Centre must have a warrant to do this, which can only be given by a judge, magistrate,
-                                or
-                                regional magistrate if there are reasonable grounds to believe that the records may help
-                                with identifying the proceeds of unlawful activities or help combat money laundering
-                                activities. The warrant may also contain conditions regarding access to the records. The
-                                accountable institution must help the Centre in any way possible to exercise the powers
-                                given in the warrant.</p>
+                            <div class="dropdown pb-4">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Plain Language Summary
+                                </button>
+                                <div class="dropdown-menu p-4 text-muted" style="max-width: 1400px;">
+                                    <p class="summaries">The Centre is allowed to access and copy
+                                        any
+                                        records kept by an accountable institution if the Centre believes that the
+                                        records may
+                                        help
+                                        identify the proceeds of unlawful activities or help combat money laundering
+                                        activities.
+                                        The
+                                        Centre must have a warrant to do this, which can only be given by a judge,
+                                        magistrate,
+                                        or
+                                        regional magistrate if there are reasonable grounds to believe that the records
+                                        may help
+                                        with identifying the proceeds of unlawful activities or help combat money
+                                        laundering
+                                        activities. The warrant may also contain conditions regarding access to the
+                                        records. The
+                                        accountable institution must help the Centre in any way possible to exercise the
+                                        powers
+                                        given in the warrant.</p>
+                                </div>
+                            </div>
 
                             <h4 id="list-item-27">27. Accountable institutions to advise Centre of clients</h4>
                             <p class="paragraphs">If an authorised representative of the Centre requests an accountable

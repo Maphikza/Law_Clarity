@@ -2,7 +2,7 @@
     padding-top: 8rem;
     padding-bottom: 2rem;
     color: white;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .intro-header{
@@ -93,6 +93,10 @@
     text-align: left;
 }
 
+.law-scroll{
+    padding-top: 2rem;
+}
+
 .test-board{
     background-color: #889293;
     font-family: 'PT Serif', serif;
@@ -139,11 +143,11 @@
     background-color: #E4E5EA;
 }
 
-.relative-canvas{
+/* .relative-canvas{
     position: relative;
     max-height: 1000px;
     overflow-y: scroll;
-}
+} */
 
 .chapter-title{
     padding-top: 1rem;
@@ -153,7 +157,6 @@
 
 .section-titles{
     background-color: #D2D2D4;
-    /* color: white; */
 }
 
 .summaries{

@@ -85,8 +85,7 @@ def home():
         flash("You need to login or register to use this website.")
         return redirect(url_for('login'))
     elif current_user.is_authenticated:
-        laws = Legislation.query.all()
-        return render_template("index.html", year=year, laws=laws)
+        return render_template("index.html", year=year)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -131,22 +130,38 @@ def get_data():
             presence_penalty=0
         )
         output = response["choices"][0]["text"]
-        laws = Legislation.query.all()
-        return render_template('index.html', year=year, prompt=prompt, output=output, laws=laws)
+        return render_template('index.html', year=year, prompt=prompt, output=output,)
 
 
 @app.route("/law", methods=["GET", "POST"])
 @login_required
 def dashboard():
-    laws = Legislation.query.all()
-    return render_template("display.html", laws=laws)
+    return render_template("display.html")
 
 
 @app.route("/dashboard", methods=["GET", "POST"])
 @login_required
 def test_dashboard():
-    laws = Legislation.query.all()
-    return render_template("dashboard.html", laws=laws)
+    return render_template("dashboard.html")
+
+
+@app.route("/fica", methods=["GET"])
+@login_required
+def fica():
+    return render_template("fica.html")
+
+
+@app.route("/fais", methods=["GET"])
+@login_required
+def fais():
+    return render_template("fais.html")
+
+@app.route("/cisca", methods=["GET"])
+@login_required
+def cisca():
+    return render_template("cisca.html")
+
+
 
 
 if __name__ == "__main__":

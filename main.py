@@ -130,7 +130,7 @@ def get_data():
             presence_penalty=0
         )
         output = response["choices"][0]["text"]
-        return render_template('index.html', year=year, prompt=prompt, output=output,)
+        return render_template('index.html', year=year, prompt=prompt, output=output, )
 
 
 @app.route("/law", methods=["GET", "POST"])
@@ -156,12 +156,17 @@ def fica():
 def fais():
     return render_template("fais.html")
 
+
 @app.route("/cisca", methods=["GET"])
 @login_required
 def cisca():
     return render_template("cisca.html")
 
 
+@app.route("/insure18", methods=["GET"])
+@login_required
+def insurance_act():
+    return render_template("insure18.html")
 
 
 if __name__ == "__main__":

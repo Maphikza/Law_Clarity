@@ -21,14 +21,14 @@ notification_manager = NotificationManager()
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-
+# Creating Database Table for Legislation
 class Legislation(db.Model):
     __tablename__ = "regulations"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     body = db.Column(db.String, nullable=False)
 
-
+# Creating Database Table for Users
 class User(UserMixin, db.Model):
     __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
@@ -53,7 +53,7 @@ def register_user(name, email, password):
 def load_user(user_id):
     return User.query.get(user_id)
 
-
+# For registration requests
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":

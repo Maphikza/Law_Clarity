@@ -3,7 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from datetime import datetime
 import os
-import openai
 from registration_request_notice import NotificationManager
 from werkzeug.security import generate_password_hash, check_password_hash
 

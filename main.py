@@ -23,17 +23,6 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
-# document_path = "ADMINISTRATION OF ESTATES ACT 66 OF 1965.pdf"
-#
-# raw_document = DocumentUploader(document_path)
-#
-# document = raw_document.extract()
-
-# regulation = Legislation(name="ADMINISTRATION OF ESTATES ACT 66 OF 1965",
-#                          body=document)
-# db.session.add(regulation)
-# db.session.commit()
-
 class Legislation(db.Model):
     __tablename__ = "regulations"
     id = db.Column(db.Integer, primary_key=True)
@@ -61,9 +50,6 @@ def register_user(name, email, password):
     db.session.commit()
 
 
-# register_user(name="siphiwe", email="stapisi155@protonmail.me", password="bellslover")
-
-
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
@@ -76,16 +62,13 @@ def register():
         email = request.form.get('email')
         message = request.form.get('message')
         notification_manager.send_email_notification(name=name, email=email, message=message)
+        return redirect(url_for('home'))
     return render_template("register.html")
 
 
 @app.route("/")
 def home():
-    if current_user.is_anonymous:
-        flash("You need to login or register to use this website.")
-        return redirect(url_for('login'))
-    elif current_user.is_authenticated:
-        return render_template("index.html", year=year)
+    return render_template("index.html", year=year)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -111,38 +94,19 @@ def login():
 @app.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    return redirect(url_for('home'))
 
 
-@app.route("/", methods=["GET", 'POST'])
-@login_required
-def get_data():
-    if request.method == "POST":
-        prompt = request.form.get('prompt')
-        openai.api_key = os.getenv("OPENAI_API_KEY")
-        response = openai.Completion.create(
-            model="code-davinci-002",
-            prompt=f"\"\"\"\n{prompt}\n\"\"\"",
-            temperature=0,
-            max_tokens=256,
-            top_p=1,
-            frequency_penalty=0,
-            presence_penalty=0
-        )
-        output = response["choices"][0]["text"]
-        return render_template('index.html', year=year, prompt=prompt, output=output, )
+# @app.route("/law", methods=["GET", "POST"])
+# @login_required
+# def dashboard():
+#     return render_template("display.html")
 
 
-@app.route("/law", methods=["GET", "POST"])
-@login_required
-def dashboard():
-    return render_template("display.html")
-
-
-@app.route("/dashboard", methods=["GET", "POST"])
-@login_required
-def test_dashboard():
-    return render_template("dashboard.html")
+# @app.route("/dashboard", methods=["GET", "POST"])
+# @login_required
+# def test_dashboard():
+#     return render_template("dashboard.html")
 
 
 @app.route("/fica", methods=["GET"])

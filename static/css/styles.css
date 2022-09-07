@@ -41,6 +41,13 @@
     background-color: #E4E5EA;
 }
 
+.registration-intro{
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: 400;
+    color: #E4E5EA;
+}
+
 .love{
     color: #ea3a7b;
     padding-left: 4px;

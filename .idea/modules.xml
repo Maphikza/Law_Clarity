@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OpenAIConsole.iml" filepath="$PROJECT_DIR$/.idea/OpenAIConsole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TheLegislativeLibrary.iml" filepath="$PROJECT_DIR$/.idea/TheLegislativeLibrary.iml" />
     </modules>
   </component>
 </project>

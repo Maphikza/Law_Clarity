@@ -125,9 +125,9 @@
   <div class="container-fluid header-container">
     <div class="container">
       <div
+       {% if current_user.is_authenticated: %}
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start navbar-head sticky-top">
         <a class="navbar-brand text-white fs-1 logo-text pt-0" href="{{ url_for('home') }}">TLL</a>
-        {% if current_user.is_authenticated: %}
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <!-- <li><a href="#" class="nav-link px-4 text-white">Home</a></li> -->
           <div class="dropdown px-4">

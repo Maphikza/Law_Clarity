@@ -41,7 +41,6 @@ class User(UserMixin, db.Model):
 
 # db.create_all()
 
-
 # To manually register users for now.
 def register_user(name, email, password):
     hashed_and_salted_password = generate_password_hash(password=password, method='pbkdf2:sha256', salt_length=6)

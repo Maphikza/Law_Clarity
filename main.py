@@ -39,7 +39,7 @@ class User(UserMixin, db.Model):
     name = db.Column(db.String(100), nullable=False)
 
 
-# db.create_all()
+db.create_all()
 
 # To manually register users for now.
 def register_user(name, email, password):
@@ -111,12 +111,6 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('home'))
-
-
-# @app.route("/law", methods=["GET", "POST"])
-# @login_required
-# def dashboard():
-#     return render_template("display.html")
 
 
 # @app.route("/dashboard", methods=["GET", "POST"])

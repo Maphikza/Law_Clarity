@@ -82,7 +82,7 @@ def approvals():
     if request.method == "POST":
         name = request.form.get('name')
         email = request.form.get('email').lower()
-        password = request.form.get('email')
+        password = request.form.get('password')
         register_user(name=name, email=email, password=password)
         return redirect(url_for('home'))
     return render_template('dashboard.html')

@@ -76,10 +76,9 @@ def home():
 @app.route("/approve", methods=["GET", "POST"])
 # @login_required
 def approvals():
-    # if current_user.id != 1:
-    #     return redirect(url_for('home'))
-    # if current_user.id == 1 and request.method == "POST":
-    if request.method == "POST":
+    if current_user.id != 1:
+        return redirect(url_for('home'))
+    if current_user.id == 1 and request.method == "POST":
         name = request.form.get('name')
         email = request.form.get('email').lower()
         password = request.form.get('password')

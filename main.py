@@ -39,7 +39,7 @@ class User(UserMixin, db.Model):
     name = db.Column(db.String(100), nullable=False)
 
 
-# db.create_all()
+db.create_all()
 
 # To manually register users for now.
 def register_user(name, email, password):
@@ -71,6 +71,20 @@ def register():
 @app.route("/")
 def home():
     return render_template("index.html", year=year)
+
+
+@app.route("/approve", methods=["GET", "POST"])
+@login_required
+def approvals():
+    if current_user.id != 1:
+        return redirect(url_for('home'))
+    elif current_user.id == 1 and request.method == "POST":
+        name = request.form.get('name')
+        email = request.form.get('email').lower()
+        password = request.form.get('email')
+        register_user(name=name, email=email, password=password)
+        return redirect(url_for('home'))
+    return render_template('dashboard.html')
 
 
 @app.route("/login", methods=["GET", "POST"])

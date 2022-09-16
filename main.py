@@ -74,7 +74,7 @@ def home():
 
 
 @app.route("/approve", methods=["GET", "POST"])
-# @login_required
+@login_required
 def approvals():
     if current_user.id != 1:
         return redirect(url_for('home'))
@@ -85,6 +85,25 @@ def approvals():
         register_user(name=name, email=email, password=password)
         return redirect(url_for('home'))
     return render_template('dashboard.html')
+
+
+@app.route("/update", methods=["GET", "POST"])
+@login_required
+def updates():
+    if current_user.id != 1:
+        return redirect(url_for('home'))
+    if current_user.id == 1 and request.method == "POST":
+        email = request.form.get('email').lower()
+        user = User.query.filter_by(email=email).first()
+        new_password = request.form.get('password')
+        if not user:
+            flash("This user is not in our user list.")
+            return redirect(url_for('updates'))
+        elif user:
+            user.password = generate_password_hash(password=new_password, method='pbkdf2:sha256', salt_length=6)
+            db.session.commit()
+            return redirect(url_for('home'))
+    return render_template('updates.html')
 
 
 @app.route("/login", methods=["GET", "POST"])

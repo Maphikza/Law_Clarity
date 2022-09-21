@@ -138,29 +138,50 @@ def logout():
 #     return render_template("dashboard.html")
 
 
-@app.route("/fica", methods=["GET"])
+@app.route("/fica", methods=["GET", "POST"])
 @login_required
 def fica():
+    if request.method == "POST":
+        name = current_user.name
+        email = current_user.email
+        message = request.form.get("message")
+        notification_manager.send_email_notification(name=name, email=email, message=message)
     return render_template("fica.html")
 
 
-@app.route("/fais", methods=["GET"])
+@app.route("/fais", methods=["GET", "POST"])
 @login_required
 def fais():
+    if request.method == "POST":
+        name = current_user.name
+        email = current_user.email
+        message = request.form.get("message")
+        notification_manager.send_email_notification(name=name, email=email, message=message)
     return render_template("fais.html")
 
 
-@app.route("/cisca", methods=["GET"])
+@app.route("/cisca", methods=["GET", "POST"])
 @login_required
 def cisca():
+    if request.method == "POST":
+        name = current_user.name
+        email = current_user.email
+        message = request.form.get("message")
+        notification_manager.send_email_notification(name=name, email=email, message=message)
     return render_template("cisca.html")
 
 
-@app.route("/insure18", methods=["GET"])
+@app.route("/insure18", methods=["GET", "POST"])
 @login_required
 def insurance_act():
+    if request.method == "POST":
+        name = current_user.name
+        email = current_user.email
+        message = request.form.get("message")
+        notification_manager.send_email_notification(name=name, email=email, message=message)
     return render_template("insure18.html")
 
 
 if __name__ == "__main__":
+    # app.run(debug=True)
     app.run(host='0.0.0.0', port=5000, debug=True)

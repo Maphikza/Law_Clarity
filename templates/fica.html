@@ -9,11 +9,43 @@
         Laundering Advisory Council to combat money laundering activities and the financing of terrorist and related
         activities. It also imposes certain duties on institutions and other persons who might be used for money
         laundering purposes and the financing of terrorist and related activities.</p>
-      <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
-        aria-controls="offcanvasExample"><b>FICA</b></a>
-      <!-- <p class="lead">
-                <a href="#" class="btn btn-secondary fw-bold">Learn more</a>
-            </p> -->
+      <div class="row">
+        <div class="col-1">
+          <button class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+            aria-controls="offcanvasExample"><b>FICA</b></button>
+        </div>
+        <div class="col-1">
+          <div class="dropdown pb-4">
+            <button type="button" class="btn btn-outline-warning dropdown-toggle " data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              Feedback
+            </button>
+            <div class="dropdown-menu p-4 text-muted" style="height: 210px; width: 700px;">
+              <form class="feedback-form" method="post" id="feedback-form">
+                <div class="mb-2">
+                  <label for="FeedbackFormControlTextarea1" class="form-label fs-5" style="width: 400px;">Feedback or
+                    Suggestions:</label>
+                  <textarea class="form-control" style="width: 650px;" id="FeedbackFormControlTextarea1" rows="3"
+                    name="message" required></textarea>
+                </div>
+                <input class="btn btn-primary" id="liveToastBtn" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">TLL</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body fw-bold fs-5" style="color: green;">
+            Thank you for your feedback.😊
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 </div>
@@ -373,7 +405,7 @@
               as legal tender and that circulates as, and is customarily used and accepted
               as, a medium of exchange in the country of issue;<br>
               (b) travellers' cheques;<br>
-              <b>"Centre"</b> means the Financial Intelligence Centre established by section 2;
+              <b>"Centre"</b> means the Financial Intelligence Centre established by section 2;<br>
               <b>"Council"</b> means the Counter-Money Laundering Advisory Council established by
               section 17;<br>
               <b>"Director"</b> means the Director of the Centre appointed in terms of section 6;<br>
@@ -526,8 +558,8 @@
                   and experience that they in fact have.</p>
               </div>
             </div>
-            <h4 id="list-item-1A">1A. Application of Act when in conflict with other laws<a
-                class="btn btn-link-secondary" href="#list-item-1A" role="button">Back to Top</a></h4>
+            <h4 id="list-item-1A" class="back-buttons">1A. Application of Act when in conflict with other laws <a
+                class="btn btn-primary btn-sm" href="#list-item-1A" role="button">Back to Top</a></h4>
             <p class="paragraphs">If any conflict, relating to the matters dealt with in this Act, arises between
               this Act and the provisions of any other law existing at the commencement of
               this Act, save the Constitution, the provisions of this Act prevail.</p>
@@ -543,7 +575,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-2">2. Establishment<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-2">2. Establishment <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">2. Establishment
               (1) A Financial Intelligence Centre is hereby established as an institution outside
@@ -562,7 +594,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-3">3. Objectives<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-3">3. Objectives <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs"> 3. Objectives<br>
               (1) The principal objective of the Centre is to assist in the identification of the
@@ -598,7 +630,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-4">4. Functions<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-4">4. Functions <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">To achieve its objectives the Centre must<br>
               (a) process, analyse and interpret information disclosed to it, and obtained by it,
@@ -654,7 +686,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-5">5. General powers<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-5">5. General powers <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Centre may do all that is necessary or expedient to perform
               its
@@ -700,7 +732,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-6">6. Appointment of Director<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-6">6. Appointment of Director <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister must appoint a fit and proper person as the Director
               of
@@ -734,7 +766,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-7">7. Removal from office<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-7">7. Removal from office <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister may remove the Director from office only on the
               grounds
@@ -757,7 +789,7 @@
                   their job properly.</p>
               </div>
             </div>
-            <h4 id="list-item-8">8. Acting Director<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-8">8. Acting Director <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">When the Director is absent or otherwise unable to perform the
               functions
@@ -774,7 +806,7 @@
                   designate another employee to act as Director.</p>
               </div>
             </div>
-            <h4 id="list-item-9">9. Proof of appointment<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-9">9. Proof of appointment<a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">If the Minister has given notice in the Gazette of any appointment of
               a
@@ -791,7 +823,7 @@
                   the Gazette, then that person's appointment can be confirmed in Court.</p>
               </div>
             </div>
-            <h4 id="list-item-10">10. Responsibilities of Director<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-10">10. Responsibilities of Director <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Director—<br>
               (a) is responsible for the performance by the Centre of its functions;<br>
@@ -826,7 +858,7 @@
                   by the Minister.</p>
               </div>
             </div>
-            <h4 id="list-item-11">11. Staff<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to
+            <h4 id="list-item-11">11. Staff <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(1) The staff of the Centre consists of—<br>
               (a) the Director; and<br>
@@ -867,8 +899,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-12">12. Security screening of staff of Centre other than Director<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-12">12. Security screening of staff of Centre other than Director <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) No person other than the Director may be appointed or seconded to
               perform
               any of the functions of the Centre unless—<br>
@@ -912,7 +944,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-13">13. Security screening of Director of Centre<a class="btn btn-link-secondary"
+            <h4 id="list-item-13">13. Security screening of Director of Centre <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) No person may be appointed as the Director of the Centre unless—<br>
               (a) information with respect to that person has been gathered in a security
@@ -955,7 +987,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-14">14. Funds and financial year of Centre<a class="btn btn-link-secondary"
+            <h4 id="list-item-14">14. Funds and financial year of Centre <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The funds of the Centre consist of—
               (a) money appropriated annually by Parliament for the purposes of the
@@ -980,7 +1012,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-15">15. Audit<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to
+            <h4 id="list-item-15">15. Audit <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">The Auditor-General must audit and report on the accounts and
               financial
@@ -1021,12 +1053,12 @@
             </div>
 
 
-            <h4 id="list-item-17">17. Establishment<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-17">17. Establishment <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">A Counter Money Laundering Advisory Council is hereby established.
               [Substituted by s. 6 of Act 11 of 2008.]</p>
 
-            <h4 id="list-item-18">18. Functions<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-18">18. Functions <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">(1) The Council must—<br>
               (a) on the Minister's request or at its own initiative, advise the Minister on—<br>
@@ -1056,7 +1088,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-19">19. Composition<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-19">19. Composition <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Council consists of the Director and each of the following,
               namely—<br>
@@ -1107,7 +1139,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-20">20. Meetings and procedure<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-20">20. Meetings and procedure <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The chairperson of the Council may call a meeting of the Council,
               but must
@@ -1145,7 +1177,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-21">21. Identification of clients and other persons<a class="btn btn-link-secondary"
+            <h4 id="list-item-21">21. Identification of clients and other persons <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An accountable institution may not establish a business
               relationship
@@ -1194,8 +1226,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-22">22. Record to be kept of business relationships and transactions<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-22">22. Record to be kept of business relationships and transactions <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Whenever an accountable institution establishes a business
               relationship or
               concludes a transaction with a client, whether the transaction is a single
@@ -1249,7 +1281,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-23">23. Period for which records must be kept<a class="btn btn-link-secondary"
+            <h4 id="list-item-23">23. Period for which records must be kept <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution must keep the records referred to in
               section
@@ -1270,7 +1302,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-24">24. Records may be kept by third parties<a class="btn btn-link-secondary"
+            <h4 id="list-item-24">24. Records may be kept by third parties <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The duties imposed by section 22 on an accountable institution to
               keep record
@@ -1304,7 +1336,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-25">25. Admissibility of records<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-25">25. Admissibility of records <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">A record kept in terms of section 22 or section 24, or a certified
               extract of any such
@@ -1313,7 +1345,7 @@
               it of which direct oral evidence would be admissible.</p>
 
 
-            <h4 id="list-item-26">26. Centre's access to records<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-26">26. Centre's access to records <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An authorised representative of the Centre has access during
               ordinary
@@ -1368,8 +1400,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-27">27. Accountable institutions to advise Centre of clients<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-27">27. Accountable institutions to advise Centre of clients <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">If an authorised representative of the Centre requests an accountable
               institution to
               advise whether—<br>
@@ -1392,7 +1424,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-28">28. Cash transactions above prescribed limit<a class="btn btn-link-secondary"
+            <h4 id="list-item-28">28. Cash transactions above prescribed limit <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution and a reporting institution must, within
               the
@@ -1407,8 +1439,8 @@
               client, or from a person acting on behalf of the client, or from a person on
               whose behalf the client is acting.</p>
 
-            <h4 id="list-item-28A">28A. Property associated with terrorist and related activities<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-28A">28A. Property associated with terrorist and related activities <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An accountable institution which has in its possession or under
               its
               control
@@ -1443,7 +1475,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-29">29. Suspicious and unusual transactions<a class="btn btn-link-secondary"
+            <h4 id="list-item-29">29. Suspicious and unusual transactions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A person who carries on a business or is in charge of or manages a
               business
@@ -1520,7 +1552,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-30">30. Conveyance of cash to or from Republic<a class="btn btn-link-secondary"
+            <h4 id="list-item-30">30. Conveyance of cash to or from Republic <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A person who intends conveying or who has conveyed or who is
               conveying
@@ -1544,8 +1576,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-31">31. Electronic transfers of money to or from Republic<a class="btn btn-link-secondary"
-                href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-31">31. Electronic transfers of money to or from Republic <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">If an accountable institution through electronic transfer sends money
               in
               excess of a
@@ -1565,8 +1597,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-32">32. Reporting procedures and furnishing of additional information<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-32">32. Reporting procedures and furnishing of additional information <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A report in terms of section 28, 29 or 31 to the Centre and a
               report
               in terms of
@@ -1598,7 +1630,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-33">33. Continuation of transactions<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-33">33. Continuation of transactions <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution, reporting institution or person required
               to
@@ -1619,7 +1651,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-34">34. Intervention by Centre<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-34">34. Intervention by Centre <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) If the Centre, after consulting an accountable institution, a
               reporting institution
@@ -1660,7 +1692,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-35">35. Monitoring orders<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-35">35. Monitoring orders <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A judge designated by the Minister of Justice for the purposes of
               the
@@ -1712,7 +1744,7 @@
             </div>
 
             <h4 id="list-item-36">36. Information held by supervisory bodies and South African Revenue
-              Service<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+              Service <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) If a supervisory body or the South African Revenue Service knows
               or
               suspects that an accountable institution wittingly or unwittingly has received or
@@ -1765,7 +1797,7 @@
             </div>
 
             <h4 id="list-item-37">37. Reporting duty and obligations to provide information not affected
-              by confidentiality rules<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to
+              by confidentiality rules <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(1) Subject to subsection (2), no duty of secrecy or confidentiality
               or
@@ -1797,7 +1829,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-38">38. Protection of persons making reports<a class="btn btn-link-secondary"
+            <h4 id="list-item-38">38. Protection of persons making reports <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) No action, whether criminal or civil, lies against an accountable
               institution,
@@ -1830,8 +1862,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-39">39. Admissibility as evidence of reports made to Centre<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-39">39. Admissibility as evidence of reports made to Centre <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">A certificate issued by an official of the Centre that information
               specified in the
               certificate was reported or sent to the Centre in terms of section 28, 29, 30(2) or 31
@@ -1851,7 +1883,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-40">40. Access to information held by Centre<a class="btn btn-link-secondary"
+            <h4 id="list-item-40">40. Access to information held by Centre <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) No person is entitled to information held by the Centre, except—<br>
               (a) an investigating authority inside the Republic, the South African
@@ -1939,7 +1971,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-41">41. Protection of confidential information<a class="btn btn-link-secondary"
+            <h4 id="list-item-41">41. Protection of confidential information <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">No person may disclose confidential information held by or obtained
               from
@@ -1963,7 +1995,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-42">42. Formulation and implementation of internal rules<a class="btn btn-link-secondary"
+            <h4 id="list-item-42">42. Formulation and implementation of internal rules <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An accountable institution must formulate and implement internal
               rules
@@ -2003,7 +2035,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-43">43. Training and monitoring of compliance<a class="btn btn-link-secondary"
+            <h4 id="list-item-43">43. Training and monitoring of compliance <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution must—<br>
               (a) provide training to its employees to enable them to comply with the provisions
@@ -2025,7 +2057,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-43A">43A. Directives<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-43A">43A. Directives <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Centre may, by notice in the Gazette, issue a directive to all
               institutions to whom the provisions of this Act apply, regarding the
@@ -2084,7 +2116,7 @@
 
             <h4 id="list-item-43B">43B. Registration by accountable institution and reporting
               institution
-              <a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a>
+              <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) Every accountable institution referred to in Schedule 1 and every
               reporting
@@ -2114,7 +2146,7 @@
             </div>
 
             <h4 id="list-item-44">44. Referral of suspected offences to investigating authorities and
-              other public bodies<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a>
+              other public bodies <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">If the Centre in the performance of its functions has reasonable
               grounds
@@ -2141,8 +2173,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-45">45. Responsibility for supervision of accountable institutions<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-45">45. Responsibility for supervision of accountable institutions <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Every supervisory body is responsible for supervising and
               enforcing
               compliance with this Act or any order, determination or directive made in
@@ -2246,7 +2278,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-45A">45A. Appointment of inspectors<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-45A">45A. Appointment of inspectors <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Director or the head of a supervisory body, as the case may
               be,
@@ -2307,7 +2339,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-45B">45B. Inspections<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-45B">45B. Inspections <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) For the purposes of determining compliance with this Act or any
               order,
@@ -2404,7 +2436,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-45C">45C. Administrative sanctions<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-45C">45C. Administrative sanctions <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Centre or a supervisory body may impose an administrative
               sanction
@@ -2532,7 +2564,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-45D">45D. Appeal<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-45D">45D. Appeal <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">(1)(a) Any institution or person may appeal against a decision of the
               Centre or
@@ -2604,7 +2636,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-45E">45E. Establishment of appeal board<a class="btn btn-link-secondary"
+            <h4 id="list-item-45E">45E. Establishment of appeal board <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An appeal board is hereby established.<br>
               (2) The Minister must appoint as members of the appeal board so many
@@ -2703,7 +2735,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-46">46. Failure to identify persons<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-46">46. Failure to identify persons <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An accountable institution that performs any act to give effect to
               a
@@ -2724,7 +2756,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-47">47. Failure to keep records<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-47">47. Failure to keep records <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to—<br>
               (a) keep record of information in terms of section 22(1); or<br>
@@ -2742,7 +2774,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-48">48. Destroying or tampering with records<a class="btn btn-link-secondary"
+            <h4 id="list-item-48">48. Destroying or tampering with records <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who willfully tampers with a record kept in terms of
               section
@@ -2760,7 +2792,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-49">49. Failure to give assistance<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-49">49. Failure to give assistance <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to give assistance to a
               representative of the
@@ -2776,7 +2808,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-50">50. Failure to advise Centre of client<a class="btn btn-link-secondary"
+            <h4 id="list-item-50">50. Failure to advise Centre of client <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to inform the Centre in
               accordance
@@ -2793,7 +2825,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-51">51. Failure to report cash transactions<a class="btn btn-link-secondary"
+            <h4 id="list-item-51">51. Failure to report cash transactions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution or reporting institution that fails, within
               the prescribed
@@ -2811,7 +2843,7 @@
               </div>
             </div>
             <h4 id="list-item-51A">51A. Failure to report property associated with terrorist and related
-              activities<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+              activities <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An accountable institution that has in its possession or under its
               control
               property owned or controlled by or on behalf of, or at the direction of an entity
@@ -2834,8 +2866,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-52">52. Failure to report suspicious or unusual transactions<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-52">52. Failure to report suspicious or unusual transactions <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Any person who fails, within the prescribed period, to report to
               the
               Centre the
@@ -2860,7 +2892,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-53">53. Unauthorised disclosure<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-53">53. Unauthorised disclosure <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Any person referred to in section 29(3) who discloses a fact or
               information
@@ -2886,7 +2918,7 @@
 
             <h4 id="list-item-54">54. Failure to report conveyance of cash or bearer negotiable
               instrument
-              into or out of Republic<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to
+              into or out of Republic <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">Any person who willfully fails to report the conveyance of cash or
               bearer negotiable
@@ -2904,7 +2936,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-55">55. Failure to send report to Centre<a class="btn btn-link-secondary"
+            <h4 id="list-item-55">55. Failure to send report to Centre <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">A person referred to in section 30(2) who fails to send a report
               regarding the
@@ -2922,7 +2954,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-56">56. Failure to report electronic transfers<a class="btn btn-link-secondary"
+            <h4 id="list-item-56">56. Failure to report electronic transfers <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to report to the Centre the
               prescribed information
@@ -2939,7 +2971,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-57">57. Failure to comply with request<a class="btn btn-link-secondary"
+            <h4 id="list-item-57">57. Failure to comply with request <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution, reporting institution or any other person
               that fails to
@@ -2961,7 +2993,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-58">58. Failure to comply with directives<a class="btn btn-link-secondary"
+            <h4 id="list-item-58">58. Failure to comply with directives <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to comply with a directive of
               the
@@ -2981,7 +3013,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-59">59. Failure to comply with monitoring order<a class="btn btn-link-secondary"
+            <h4 id="list-item-59">59. Failure to comply with monitoring order <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to comply with an order by a
               judge
@@ -2998,7 +3030,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-60">60. Misuse of information<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-60">60. Misuse of information <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Any person who—
               (a) discloses confidential information held by or obtained from the Centre
@@ -3033,8 +3065,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-61">61. Failure to formulate and implement internal rules<a class="btn btn-link-secondary"
-                href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-61">61. Failure to formulate and implement internal rules <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to—<br>
               (a) formulate and implement internal rules in accordance with section 42(1) and
               (2);<br>
@@ -3056,7 +3088,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-61A">61A. Failure to register with Centre<a class="btn btn-link-secondary"
+            <h4 id="list-item-61A">61A. Failure to register with Centre <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any accountable institution or reporting institution that—<br>
               (a) fails to register with the Centre in terms of section 43B; or<br>
@@ -3074,8 +3106,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-62">62. Failure to provide training or appoint compliance officer<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-62">62. Failure to provide training or appoint compliance officer <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">An accountable institution that fails to—<br>
               (a) provide training to its employees in accordance with section 43(a); or<br>
               (b) appoint the person referred to in section 43(b),
@@ -3091,7 +3123,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-62A">62A. Offences relating to inspection<a class="btn btn-link-secondary"
+            <h4 id="list-item-62A">62A. Offences relating to inspection <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">A person who—<br>
               (a) fails to appear for questioning in terms of section 45B(2)(a);<br>
@@ -3114,7 +3146,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-62B">62B. Hindering or obstructing appeal board<a class="btn btn-link-secondary"
+            <h4 id="list-item-62B">62B. Hindering or obstructing appeal board <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who willfully interrupts the proceedings of the appeal
               board
@@ -3134,7 +3166,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-62C">62C. Failure to attend when summoned<a class="btn btn-link-secondary"
+            <h4 id="list-item-62C">62C. Failure to attend when summoned <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who, having been summoned to attend and give evidence or to
               produce
@@ -3160,7 +3192,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-62D">62D. Failure to answer fully or truthfully<a class="btn btn-link-secondary"
+            <h4 id="list-item-62D">62D. Failure to answer fully or truthfully <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who, having been sworn in or having made an affirmation
               before the
@@ -3182,8 +3214,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-63">63. Obstructing of official in performance of functions<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-63">63. Obstructing of official in performance of functions <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who obstructs, hinders or threatens an official or
               representative of the
               Centre in the performance of their duties or the exercise of their powers in terms of
@@ -3200,8 +3232,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-64">64. Conducting transactions to avoid reporting duties<a class="btn btn-link-secondary"
-                href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-64">64. Conducting transactions to avoid reporting duties <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who conducts, or causes to be conducted, two or more
               transactions with
               the purpose, in whole or in part, of avoiding giving rise to a reporting duty under this
@@ -3218,8 +3250,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-65">65. Unauthorised access to computer system or application or data<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-65">65. Unauthorised access to computer system or application or data <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Any person who, without authority to do so, willfully accesses or
               causes any
               other person to access any computer system that belongs to, or is under the
@@ -3244,8 +3276,8 @@
               </div>
             </div>
 
-            <h4 id="list-item-66">66. Unauthorised modification of contents of computer system<a
-                class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+            <h4 id="list-item-66">66. Unauthorised modification of contents of computer system <a
+                class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">Any person who, without authority to do so, willfully causes a
               computer
               system that
@@ -3265,7 +3297,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-67">67. Definitions<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-67">67. Definitions <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">For the purposes of sections 65 and 66—<br>
               (a) "access" in relation to an application or data means rendering that
@@ -3302,7 +3334,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-68">68. Penalties<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-68">68. Penalties <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">(1) A person convicted of an offence mentioned in this Chapter, other
               than an
@@ -3324,7 +3356,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-69">69. Defences<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-69">69. Defences <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">If a person who is an employee, director or trustee of, or a partner
               in,
@@ -3364,7 +3396,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-70">70. Search, seizure and forfeiture<a class="btn btn-link-secondary"
+            <h4 id="list-item-70">70. Search, seizure and forfeiture <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A police official or person authorised by the Minister to receive
               a
@@ -3478,7 +3510,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-71">71. Jurisdiction of courts<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-71">71. Jurisdiction of courts <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A regional court has penal jurisdiction to impose any penalty
               mentioned in
@@ -3510,7 +3542,7 @@
 
             <h4 id="list-item-72">72. Act not to limit powers of investigating authorities or
               supervisory
-              bodies<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+              bodies <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">This Act does not detract from—<br>
               (a) an investigating authority's powers in terms of other legislation to obtain
               information for the purpose of criminal investigations; or<br>
@@ -3528,7 +3560,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-73">73.Amendment of list of accountable institutions<a class="btn btn-link-secondary"
+            <h4 id="list-item-73">73.Amendment of list of accountable institutions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister may, by notice in the Gazette, amend the list of
               accountable
@@ -3568,7 +3600,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-74">74. Exemptions for accountable institutions<a class="btn btn-link-secondary"
+            <h4 id="list-item-74">74. Exemptions for accountable institutions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister may, after consulting the Council and the Centre, and
               on
@@ -3601,7 +3633,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-75">75. Amendment of list of supervisory bodies<a class="btn btn-link-secondary"
+            <h4 id="list-item-75">75. Amendment of list of supervisory bodies <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister may, by notice in the Gazette, amend the list of
               supervisory
@@ -3633,7 +3665,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-76">76. Amendment of list of reporting institutions<a class="btn btn-link-secondary"
+            <h4 id="list-item-76">76. Amendment of list of reporting institutions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister may, by notice in the Gazette, amend the list of
               reporting
@@ -3680,7 +3712,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-77">77. Regulations<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-77">77. Regulations <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister, after consulting the Council and the Centre, may
               make,
@@ -3725,7 +3757,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-78">78. Indemnity<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back
+            <h4 id="list-item-78">78. Indemnity <a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">The Minister, the Centre or an employee or representative of the
               Centre,
@@ -3746,7 +3778,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-79">79. Amendment of laws<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-79">79. Amendment of laws <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">The Acts mentioned in Schedule 4 are hereby amended to the extent set
               out in
@@ -3762,7 +3794,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-80">80. Status of footnotes<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-80">80. Status of footnotes <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">The footnotes in this Act have been inserted only for ease of
               reference
@@ -3781,7 +3813,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-81">81. Transitional arrangements<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-81">81. Transitional arrangements <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Until the date referred to in section 82(2), the person designated
               for the
@@ -3814,7 +3846,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-82">82. Short title and commencement<a class="btn btn-link-secondary" href="#list-item-1"
+            <h4 id="list-item-82">82. Short title and commencement <a class="btn btn-primary btn-sm" href="#list-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) This Act is called the Financial Intelligence Centre Act, 2001,
               and
@@ -3836,7 +3868,7 @@
               </div>
             </div>
 
-            <h4 id="list-item-83">Schedule 1 List of accountable institutions<a class="btn btn-link-secondary"
+            <h4 id="list-item-83">Schedule 1 List of accountable institutions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">[Schedule 1 amended by notice in Government Gazette published under GN
               1104 with effect from 01
@@ -3885,7 +3917,7 @@
               19. A person who carries on the business of a money remitter. </p>
 
 
-            <h4 id="list-item-84">Schedule 2 List of supervisory bodies<a class="btn btn-link-secondary"
+            <h4 id="list-item-84">Schedule 2 List of supervisory bodies <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">[Schedule 2 amended by notice in Government Gazette published under GN
               1105 with effect from 01
@@ -3914,14 +3946,14 @@
               Gambling Act, 2004 (Act 7 of 2004). </p>
 
 
-            <h4 id="list-item-85">Schedule 3 List of reporting institutions<a class="btn btn-link-secondary"
+            <h4 id="list-item-85">Schedule 3 List of reporting institutions <a class="btn btn-primary btn-sm"
                 href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">1. A person who carries on the business of dealing in motor vehicles.<br>
               2. A person who carries on the business of dealing in Krugerrands.</p>
 
 
             <h4 id="list-item-86">Schedule 4 Amendment of sections of Prevention of Organised Crime Act,
-              1998 (Act 121 of 1998)<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to
+              1998 (Act 121 of 1998)<a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">
               1. The repeal of section 7.<br>
@@ -3957,7 +3989,7 @@
 
 
             <h4 id="list-item-87">Amendment of Promotion of Access to Information Act, 2000 (Act 2 of
-              2000)<a class="btn btn-link-secondary" href="#list-item-1" role="button">Back to Top</a></h4>
+              2000)<a class="btn btn-primary btn-sm" href="#list-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">
               The amendment of Part 1 of the Schedule by the addition of the following item:
               Section 36 of Financial Intelligence Centre Act 38 of 2001.
@@ -3987,5 +4019,6 @@
 
   </div>
 </div>
+
 
 {% include "footer.html" %}

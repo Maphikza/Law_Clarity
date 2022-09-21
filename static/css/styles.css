@@ -25,6 +25,11 @@
     padding-bottom: 1rem;
 }
 
+.back-buttons{
+    padding-right: 10px;
+    margin-right: 4px;
+}
+
 .logo-text{
     font-family: 'PT Serif', serif;
     font-weight: 700;

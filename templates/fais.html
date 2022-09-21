@@ -8,8 +8,42 @@
       <p class="lead intro-body">This Act regulates the way in which financial advisory and intermediary services are
         rendered to clients, in order to ensure their protection. It also repeals or amends certain laws, and provides
         for incidental matters.</p>
-      <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvasFAIS" role="button"
-        aria-controls="offcanvas"><b>FAIS</b></a>
+      <div class="row">
+        <div class="col-1">
+          <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvasFAIS" role="button"
+            aria-controls="offcanvas"><b>FAIS</b></a>
+        </div>
+        <div class="col-1">
+          <div class="dropdown pb-4">
+            <button type="button" class="btn btn-outline-warning dropdown-toggle " data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              Feedback
+            </button>
+            <div class="dropdown-menu p-4 text-muted" style="height: 210px; width: 700px;">
+              <form class="feedback-form" method="post" id="feedback-form">
+                <div class="mb-2">
+                  <label for="FeedbackFormControlTextarea1" class="form-label fs-5" style="width: 400px;">Feedback or
+                    Suggestions:</label>
+                  <textarea class="form-control" style="width: 650px;" id="FeedbackFormControlTextarea1" rows="3"
+                    name="message" required></textarea>
+                </div>
+                <input class="btn btn-primary" id="liveToastBtn" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">TLL</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body fw-bold fs-5" style="color: green;">
+              Thank you for your feedback.😊
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1006,8 +1040,8 @@
                 </p>
               </div>
             </div>
-            <h4 id="FAIS-item-1A">1A. Relationship between Act and Financial Sector Regulation Act<a
-                class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to Top</a></h4>
+            <h4 id="FAIS-item-1A">1A. Relationship between Act and Financial Sector Regulation Act <a
+                class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A reference in this Act to the Board or the registrar must be read as a
               reference to the Authority.<br>
               (Section 1 A(1) inserted by section 290 of Act 9 of 2017, with effect from 1 April 2018 )<br>
@@ -1092,7 +1126,7 @@
                 </p>
               </div>
             </div>
-            <h4 id="FAIS-item-1B">1B. Regulatory instruments<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-1B">1B. Regulatory instruments <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">For the purposes of the definition of “regulatory instrument ” in section 1 of the
               Financial Sector
@@ -1113,7 +1147,7 @@
                   compliance officers determined under section 17(2).</p>
               </div>
             </div>
-            <h4 id="FAIS-item-2">2. repealed by section 290 of Act 9 of 2017<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-2">2. repealed by section 290 of Act 9 of 2017 <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 2 substituted by section 17 6 of Act 45 of 2013)
@@ -1128,7 +1162,7 @@
                   repealed by section 290 of Act 9 of 2017, with effect from 1 April 2018.</p>
               </div>
             </div>
-            <h4 id="FAIS-item-3">3. General provisions concerning registrar<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-3">3. General provisions concerning registrar <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) Subject to the provisions of this Act, any notice given, approval or exemption
@@ -1187,7 +1221,7 @@
                   any regulatory or supervisory authority.</p>
               </div>
             </div>
-            <h4 id="FAIS-item-4">4. Special provisions concerning powers of registrar<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-4">4. Special provisions concerning powers of registrar <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) ……….
@@ -1296,7 +1330,7 @@
                   client funds.</p>
               </div>
             </div>
-            <h4 id="FAIS-item-5">5. ……….<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-5">5. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 5 repealed by section 17 8 of Act 45 of 2013)</p>
             <div class="dropdown pb-4">
@@ -1309,7 +1343,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-6">6. Delegations<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back
+            <h4 id="FAIS-item-6">6. Delegations <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">(1) The Authority may, in writing, delegate to any person a power or
               duty conferred upon the Authority under
@@ -1363,7 +1397,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-6A">6A. Fit and proper requirements<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-6A">6A. Fit and proper requirements <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The registrar, for purposes of this Act, by notice in the Gazette
               -<br>
@@ -1440,7 +1474,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-7">7. Authorisation of financial services providers<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-7">7. Authorisation of financial services providers <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) With effect from a date determined by the Minister by notice in
@@ -1492,7 +1526,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-8">8. Application for authorisation<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-8">8. Application for authorisation <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) An application for an authorisation referred to in section 7(1),
               including an application by an applicant
@@ -1814,8 +1848,8 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-8A">8A. Compliance with fit and proper requirements after authorisation<a
-                class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to Top</a>
+            <h4 id="FAIS-item-8A">8A. Compliance with fit and proper requirements after authorisation <a
+                class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">An authorised financial services provider, key individual,
               representative of the provider and key
@@ -1840,7 +1874,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-9">9. Suspension and withdrawal of authorisation<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-9">9. Suspension and withdrawal of authorisation<a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) The registrar may, subject to subsection (2) and irrespective of
@@ -1997,7 +2031,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-10">10. ……….<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-10">10. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 10 repealed by section 50 of Act 22 of 2008)</p>
             <div class="dropdown pb-4">
@@ -2010,7 +2044,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-11">11. Lapsing of licence<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-11">11. Lapsing of licence <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A licence lapses -<br>
 
@@ -2056,7 +2090,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-12">12. Exemptions in respect of product suppliers<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-12">12. Exemptions in respect of product suppliers <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) The registrar may exempt a product supplier who is authorised or
@@ -2092,7 +2126,7 @@
             </div>
 
             <h4 id="FAIS-item-13">13. Qualifications of representatives and duties of authorised
-              financial services providers<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+              financial services providers <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(1) A person may not -<br>
 
@@ -2222,7 +2256,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-14">14. Debarment of representatives<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-14">14. Debarment of representatives <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1)
               (a) An authorised financial services provider must debar a person from rendering
@@ -2379,7 +2413,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-14A">14A. ……….<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back
+            <h4 id="FAIS-item-14A">14A. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">(Section 14A inserted by section 54 of Act 22 of 2008)<br>
               (Section 14A amended by section 188 of Act 45 of 2013)<br>
@@ -2397,7 +2431,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-15">15. Publication of codes of conduct<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-15">15. Publication of codes of conduct <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1)
               (a) The registrar must, after consultation with representative bodies of the financial
@@ -2450,8 +2484,8 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-16">16. Principles of code of conduct<a class="btn btn-link-secondary" href="#FAIS-item-1"
-                role="button">Back to Top</a></h4>
+            <h4 id="FAIS-item-16">16. Principles of code of conduct <a class="btn btn-primary btn-sm"
+                href="#FAIS-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) A code of conduct must be drafted in such a manner as to ensure
               that the clients being rendered financial
               services will be able to make informed decisions , that their reasonable financial needs
@@ -2523,7 +2557,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-17">17. Compliance officers and compliance arrangements<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-17">17. Compliance officers and compliance arrangements <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1)
@@ -2627,7 +2661,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-18">18. Maintenance of records<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-18">18. Maintenance of records <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">An authorised financial services provider must, except to the extent
               exempted by the registrar, maintain
@@ -2664,7 +2698,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-19">19. Accounting and audit requirements<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-19">19. Accounting and audit requirements <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Except to the extent exempted by the registrar , an authorised
               financial services provider must , in respect
@@ -2827,7 +2861,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-20">20.Office of Ombud for Financial Services Providers<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-20">20.Office of Ombud for Financial Services Providers <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) There is an office to be known as the Office of the Ombud for
@@ -2867,7 +2901,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-20A">20A. Ombud scheme<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-20A">20A. Ombud scheme <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">The scheme in relation to complaints implemented by this Part is
               declared to be a statutory ombud
@@ -2886,7 +2920,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-21">21. Appointment of Ombud and deputy ombuds<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-21">21. Appointment of Ombud and deputy ombuds <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) The Minister -<br>
@@ -2943,7 +2977,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-22">22. Funding of Office<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-22">22. Funding of Office <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The funds of the Office consist of -<br>
 
@@ -2984,7 +3018,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-23">23. Accountability<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-23">23. Accountability <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Despite the provisions of the Public Finance Management Act, 1999
               (Act No. 1 of 1999), the board of
@@ -3012,7 +3046,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-24">24. General administrative powers of Ombud<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-24">24. General administrative powers of Ombud <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">The Ombud may for the performance of functions in the Office and as a
@@ -3053,7 +3087,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-25">25. Disestablishment and liquidation of Office<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-25">25. Disestablishment and liquidation of Office <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) The Office may not be disestablished or liquidated except by an
@@ -3075,7 +3109,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-26">26. Powers of Board<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-26">26. Powers of Board <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Board may make rules, including different rules in respect of
               different categories of complaints or
@@ -3170,7 +3204,7 @@
             </div>
 
             <h4 id="FAIS-item-27">27. Receipt of complaints, prescription, jurisdiction and
-              investigation<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+              investigation <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(1) On submission of a complaint to the Office, the Ombud must -<br>
 
@@ -3293,7 +3327,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-28">28. Determinations by Ombud<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-28">28. Determinations by Ombud <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Ombud must in any case where a matter has not been settled or
               a recommendation referred to in
@@ -3413,7 +3447,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-29">29. Record-keeping<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-29">29. Record-keeping <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Ombud must keep proper files and records in respect of
               complaints as well as a record of any
@@ -3444,7 +3478,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-30">30. Report of Ombud<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-30">30. Report of Ombud <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Ombud must during every year, within six months after the end
               of the financial year of the Ombud,
@@ -3466,7 +3500,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-31">31. Penalties<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back
+            <h4 id="FAIS-item-31">31. Penalties <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back
                 to Top</a></h4>
             <p class="paragraphs">Any person who -<br>
 
@@ -3501,7 +3535,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-32">32. ……….<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-32">32. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 32 repealed by section 290 of Act 9 of 2017, with effect from
               1 April 2018 )</p>
@@ -3515,7 +3549,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-33">33. ………..<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-33">33. ……….. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 33 amended by section 59 of Act 22 of 2008)
               (Section 33 repealed by section 195 of Act 45 of 2013) </p>
@@ -3530,7 +3564,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-34">34. Undesirable practices<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-34">34. Undesirable practices <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) Subject to subsections (2) and (3), the registrar may by notice in
               the Gazette declare a particular
@@ -3615,7 +3649,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-35">35. Regulations<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-35">35. Regulations <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The Minister may by notice in the Gazette , after consultation
               with the registrar , make regulations relating
@@ -3679,7 +3713,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-36">36. Offences and penalties<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-36">36. Offences and penalties <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(a) contravenes or fails to comply with a provision of section 7 (1)
               or (3) , 8(8), 8(10)(a), 13(1) or (2) ,
@@ -3722,7 +3756,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-37">37. ……….<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-37">37. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 37 repealed by section 199 of Act 45 of 2013)</p>
             <div class="dropdown pb-4">
@@ -3735,7 +3769,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-38">38. Voluntary sequestration, winding -up and closure<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-38">38. Voluntary sequestration, winding -up and closure <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">No -<br>
@@ -3790,7 +3824,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-38A">38A. Business rescue<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-38A">38A. Business rescue <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1)
               (a) Notwithstanding the provisions of the Companies Act or any other law under which a
@@ -3887,8 +3921,8 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-38B">38B. Application by registrar for sequestration or liquidation<a
-                class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to Top</a>
+            <h4 id="FAIS-item-38B">38B. Application by registrar for sequestration or liquidation <a
+                class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) Subject to subsection (3), if the registrar, after an on-site
               visit in terms of section 4(5) or an inspection
@@ -3948,7 +3982,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-38C">38C. Directives<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-38C">38C. Directives <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(1) The registrar may, in order to ensure compliance with or to
               prevent a contravention of this Act, issue a
@@ -3998,7 +4032,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-39">39. Right to reconsideration of decision<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-39">39. Right to reconsideration of decision <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">Any person aggrieved by a decision of a financial services provider to
@@ -4018,7 +4052,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-40">40. Saving of rights<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-40">40. Saving of rights <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">No provision of this Act, and no act performed under or in terms of
@@ -4044,7 +4078,7 @@
                   This includes providers who are authorized by this law, as well as those who are not authorized.</p>
               </div>
             </div>
-            <h4 id="FAIS-item-41">41. Fees and penalties<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-41">41. Fees and penalties <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1)
@@ -4122,7 +4156,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-42">42. ………. <a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-42">42. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 42 repealed by section 204 of Act 45 of 2013)</p>
             <div class="dropdown pb-4">
@@ -4135,7 +4169,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-43">43. ……….<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-43">43. ………. <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">(Section 43 repealed by section 62 of Act 22 of 2008)</p>
             <div class="dropdown pb-4">
@@ -4148,7 +4182,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-44">44. Exemptions by registrar and Minister<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-44">44. Exemptions by registrar and Minister <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) The registrar may on or after the commencement of this Act, but
@@ -4243,7 +4277,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-45">45. Exemptions, and amendment or repeal of laws<a class="btn btn-link-secondary"
+            <h4 id="FAIS-item-45">45. Exemptions, and amendment or repeal of laws <a class="btn btn-primary btn-sm"
                 href="#FAIS-item-1" role="button">Back to Top</a>
             </h4>
             <p class="paragraphs">(1) The provisions of this Act do not apply to the rendering of
@@ -4488,7 +4522,7 @@
               </div>
             </div>
 
-            <h4 id="FAIS-item-46">46. Commencement and short title<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-46">46. Commencement and short title <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">This Act is called the Financial Advisory and Intermediary Services
               Act, 2002, and comes into operation
@@ -4503,7 +4537,7 @@
                   will start on a date that the President announces in the Gazette.</p>
               </div>
             </div>
-            <h4 id="FAIS-item-47">LAWS AMENDED OR REPEALED<a class="btn btn-link-secondary" href="#FAIS-item-1"
+            <h4 id="FAIS-item-47">LAWS AMENDED OR REPEALED <a class="btn btn-primary btn-sm" href="#FAIS-item-1"
                 role="button">Back to Top</a></h4>
             <p class="paragraphs">(Section 45) <br>
               I Act No. 97 of 1990
@@ -4903,7 +4937,7 @@
               T A MANUEL, MP <br>
               MINISTER OF FINANCE <br>
               DATE: 20 May 2003 </p>
-            <h4 id="FAIS-item-48">SCHEDULE<a class="btn btn-link-secondary" href="#FAIS-item-1" role="button">Back to
+            <h4 id="FAIS-item-48">SCHEDULE <a class="btn btn-primary btn-sm" href="#FAIS-item-1" role="button">Back to
                 Top</a></h4>
             <p class="paragraphs">
               1. Definitions
